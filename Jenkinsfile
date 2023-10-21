@@ -12,7 +12,7 @@ pipeline{
     }
     stage("Checkout from SCM"){
       steps{
-        git branch:'master',credentialsID:'github',url:'https://github.com/Mani-Bhaskar-Edula/website'
+        git branch:'master',credentialsId:'github',url:'https://github.com/Mani-Bhaskar-Edula/website'
       }
     }
     stage("Build Application"){
